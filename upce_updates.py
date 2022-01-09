@@ -35,10 +35,10 @@ def send_updates():
             for i in news_text:
                 sleep(randint(1, 3))
                 # send text of news
-                BOT.send_message("-1001501024008", i)
+                BOT.send_message("CHAT_ID", i)
                 sleep(randint(1, 3))
                 # send translated text of news 
-                BOT.send_message('-1001501024008', translator.translate(i, src='cs', dest='ru').text)
+                BOT.send_message('CHAT_ID', translator.translate(i, src='cs', dest='ru').text)
             
             news = act_news
 
