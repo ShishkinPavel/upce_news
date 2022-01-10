@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 import requests
 from random import randint
 import time
-from telebot import TeleBot
+from telebot import TeleBot # pip3 install pyTelegramBotAPI
 from googletrans import Translator
 
 HEADERS = {"YOUR": "HEADERS"}
